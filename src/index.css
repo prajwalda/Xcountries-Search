@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+  gap:1rem;
+}
+
+.wrapper{
+  width:200px;
+  height:140px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  padding:10px;
+  border-radius: 10px;
+}
+.wrapper img{
+  width:70px;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  height: 4rem;
+  background-color: aliceblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.input > input {
+  height: 2rem;
+  width: 50%;
+  padding-left: 1rem;
+}
