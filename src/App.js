@@ -37,11 +37,11 @@ export default function App() {
         />
       </div>
 
-      <div className="App">
+      <div className="countryCard">
         {filteredCountries.map((country) => (
           <div key={country.cca2} className="wrapper">
             <img src={country.flags.png} alt={`Flag of ${country.flags.alt}`} />
-            <h3>{country.name.common}</h3>
+            <h2>{country.name.common}</h2>
           </div>
         ))}
       </div>
