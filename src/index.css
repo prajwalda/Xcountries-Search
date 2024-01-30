@@ -1,52 +1,29 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-.countryCard {
-  font-family: sans-serif;
-  text-align: center;
+/* App.css */
+.countryContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
-  align-items:center;
-  gap:1rem;
-}
-
-.wrapper{
-  width:200px;
-  height:140px;
-  border: 1px solid grey;
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  padding:10px;
-  border-radius: 10px;
-}
-.wrapper img{
-  width:70px;
-  
-}
-
-.container{
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.input {
-  height: 4rem;
-  background-color: aliceblue;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.countryCard {
+  margin: 10px;
+  text-align: center;
+  flex: 0 0 calc(14.28% - 20px); /* Adjust the width as needed for 7 boxes in a row */
+  max-width: calc(14.28% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Solid border style */
 }
 
-.input > input {
-  height: 2rem;
-  width: 50%;
-  padding-left: 1rem;
+.countryFlag {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Center the search bar */
+input[type="text"] {
+  display: block;
+  margin: 20px auto;
+  padding: 8px;
 }
